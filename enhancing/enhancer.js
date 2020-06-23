@@ -9,7 +9,7 @@ function succeed(item) {
   succeededItem = item;
   if(succeededItem.enhancement > 19)
   return { ...succeededItem };
-  else return {...succeededItem, enchancement: succeededItem.enhancement + 1 }
+  else return {...succeededItem, enhancement: succeededItem.enhancement + 1 }
 }
 
 function fail(item) {
