@@ -21,15 +21,13 @@ function fail(item) {
     return {...failedItem, durability: failedItem.durability - 10 }
   }
   else if(failedItem.enhancement > 16) {
-    return {...failedItem, enhancement: failedItem.enhancement - 1 }
+    return {...failedItem, durability: failedItem.durability - 10, enhancement: failedItem.enhancement - 1 }
   }
   return { ...item };
 }
 
 function repair(item) {
-  repairedItem = item;
-  repairedItem.durabiity = 100;
-  return { ...repaitedItem };
+  return { ...item, durability: 100 }
 }
 
 function get(item) {
